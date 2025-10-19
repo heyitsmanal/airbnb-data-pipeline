@@ -1,24 +1,61 @@
-# Airbnb Data Pipeline (Python • Airflow • Docker • PostgreSQL)
+# 🏠 Airbnb Data Pipeline (Python • Airflow • Docker • PostgreSQL)
 
-A compact, production-style ETL that ingests Airbnb listings (CSV or API), cleans and validates them with pandas, and loads them into a PostgreSQL data warehouse. Orchestrated daily with Apache Airflow.
+A **production-style ETL pipeline** designed to automate the ingestion, transformation, and loading of Airbnb listings data into a PostgreSQL data warehouse.  
+The workflow is fully **containerized with Docker** and orchestrated using **Apache Airflow** for daily scheduling and monitoring.
 
-## 🧩 Airflow DAG in Action
+---
 
-Here’s a snapshot of the **Airbnb Data Pipeline** running successfully in Apache Airflow:
+## ⚙️ Project Overview
 
-The pipeline runs daily and orchestrates three main tasks:
-1. **Extract** – Reads Airbnb listings data (CSV/API)
-2. **Transform** – Cleans and enriches data with pandas
-3. **Load** – Stores processed data into PostgreSQL warehouse
-   
-![WhatsApp Image 2025-10-19 at 17 47 10_cacb3bc8](https://github.com/user-attachments/assets/fd92e0c3-7167-4d81-a3da-d15d639de2cf)
+The **Airbnb Data Pipeline** automates the following key processes:
 
+1. **Extract** – Ingests Airbnb listings from CSV files or a public API  
+2. **Transform** – Cleans, enriches, and validates the data using **pandas**  
+3. **Load** – Loads the processed data into a **PostgreSQL** warehouse using **SQLAlchemy**
 
-## Why this project?
-I built this to demonstrate practical **Data Engineering** skills relevant to real teams:
-- Containerized orchestration with **Airflow**
-- **ETL** with Python (pandas) and **SQLAlchemy**
-- **PostgreSQL** data modeling and loading
-- Clear, reproducible **Docker Compose** setup
+This setup demonstrates how to design a modular, scalable, and reproducible ETL process suitable for real-world data engineering environments.
 
+---
 
+## 🚀 Technologies Used
+
+- **Python** – Data manipulation, validation, and scripting  
+- **Apache Airflow** – Workflow orchestration and task scheduling  
+- **PostgreSQL** – Centralized data storage and modeling  
+- **SQLAlchemy** – ORM for efficient database interaction  
+- **Docker & Docker Compose** – Containerization for portability and consistency  
+
+---
+
+## 📊 Airflow DAG in Action
+
+Below is a snapshot of the pipeline running in **Apache Airflow**, showing the three core ETL tasks executed in sequence:
+
+![Airbnb DAG Screenshot](https://github.com/user-attachments/assets/fd92e0c3-7167-4d81-a3da-d15d639de2cf)
+
+Each DAG run performs:
+- **Extract:** Fetch raw Airbnb data  
+- **Transform:** Apply cleaning and enrichment logic  
+- **Load:** Store refined data in PostgreSQL  
+
+---
+
+## 🎯 Purpose & Key Takeaways
+
+This project highlights hands-on experience with modern **Data Engineering** practices, including:
+- Workflow automation using **Airflow DAGs**  
+- Data extraction and cleaning with **pandas**  
+- Data modeling and loading into **PostgreSQL**  
+- Deployment via **Docker Compose** for easy reproducibility  
+
+It serves as a demonstration of building a **scalable, maintainable ETL pipeline** from scratch — a valuable foundation for production-grade data workflows.
+
+---
+
+## 🧠 Future Improvements
+
+- Add data quality validation with **Great Expectations**  
+- Integrate automated logging and alerting  
+- Extend to real-time ingestion using **Kafka** or **Spark Streaming**
+
+---
