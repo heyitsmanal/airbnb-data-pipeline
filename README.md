@@ -4,7 +4,6 @@
 ![Airflow](https://img.shields.io/badge/Airflow-Orchestration-orange?logo=apacheairflow&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue?logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED?logo=docker&logoColor=white)
-![Build Status](https://img.shields.io/badge/Status-Stable-success)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 A **production-style ETL pipeline** designed to automate the ingestion, transformation, and loading of Airbnb listings data into a PostgreSQL data warehouse.  
@@ -66,3 +65,7 @@ It serves as a demonstration of building a **scalable, maintainable ETL pipeline
 - Extend to real-time ingestion using **Kafka** or **Spark Streaming**
 
 ---
+
+
+## 🔧 Local configuration
+Copy `.env.example` to `.env` before starting Docker Compose, then replace the example database passwords with local values.
