@@ -4,7 +4,6 @@
 ![Airflow](https://img.shields.io/badge/Airflow-Orchestration-orange?logo=apacheairflow&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue?logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED?logo=docker&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 A **production-style ETL pipeline** designed to automate the ingestion, transformation, and loading of Airbnb listings data into a PostgreSQL data warehouse.  
 The workflow is fully **containerized with Docker** and orchestrated using **Apache Airflow** for daily scheduling and monitoring.
